@@ -2,17 +2,17 @@
 GET http://localhost:3000/products
 
 ### product show
-GET http://localhost:3000/products/4
+GET http://localhost:3000/products/5
 
 ### product create
 POST http://localhost:3000/products
 content-type: application/json
 
 {
-  "name": "Blaster",
+  "name": "testing",
   "price": 500,
-  "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/StormTrooper_Blaster.jpg",
-  "description": "Often used by Stormtroopers, clones, or bountry hunters. Other forms included sniper blaster rifles."
+  "image_url": "testing",
+  "description": "test to delete"
 }
 
 ### product update
@@ -22,3 +22,6 @@ content-type: application/json
 {
   "price": 700
 }
+
+### product destroy
+DELETE http://localhost:3000/products/6
