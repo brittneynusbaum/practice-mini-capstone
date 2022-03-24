@@ -3,3 +3,14 @@ GET http://localhost:3000/products
 
 ### product show
 GET http://localhost:3000/products/3
+
+### product create
+POST http://localhost:3000/products
+content-type: application/json
+
+{
+  "name": "Blaster",
+  "price": 500,
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/StormTrooper_Blaster.jpg",
+  "description": "Often used by Stormtroopers, clones, or bountry hunters. Other forms included sniper blaster rifles."
+}
